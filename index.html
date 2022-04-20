@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Sharing Website - Easy Tutorials Youtube Channel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="menu-icon">
+            <img src="images/WE2.png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png">
+            </div>
+            <img src="images/voice-search.png" class="mic-icon">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/upload.png" data-toggle="modal" data-target="#exampleModal">
+            <img src="images/more.png">
+            <img src="images/notification.png">
+            <img src="images/CD.png" class="user-icon">
+        </div>
+    </nav>
+    <!------------------ sidebar ------------------>
+    <div class="sidebar">
+        <div class="shortcut-links">
+           <a href="file:///C:/Users/ADMIN/Downloads/youtube/index.html"><img src="images/home.png"><p>Home</p></a> 
+           <a href=""><img src="images/explore.png"><p>Explore</p></a> 
+           <a href=""><img src="images/subscriprion.png"><p>Subscriprion</p></a> 
+           <a href=""><img src="images/library.png"><p>Library</p></a> 
+           <a href=""><img src="images/history.png"><p>History</p></a> 
+           <a href=""><img src="images/playlist.png"><p>Playlist</p></a> 
+           <a href=""><img src="images/messages.png"><p>Message</p></a> 
+           <a href=""><img src="images/show-more.png"><p>Show More</p></a> 
+           <hr>
+        </div>
+        <div class="subscribed-list">
+            <h3>RECOMMEND</h3>
+            <a href="https://www.youtube.com/watch?v=OfMyEMpy7w8"target="_blank"><img src="images/blueoff.jpg"><p>Best In Me</p></a>
+            <a href="https://www.youtube.com/watch?v=Aa9YmR8SdeA"target="_blank"><img src="images/thecarpenters.jpg"><p>Yesterday Once More</p></a>  
+            <a href="https://www.youtube.com/watch?v=jjnmICxvoVY"target="_blank"><img src="images/svgd.jpg"><p>I Knew I Loved You</p></a> 
+            <a href="https://www.youtube.com/watch?v=ulOb9gIGGd0"target="_blank"><img src="images/westlife.jpg"><p>My Love</p></a>
+            <a href="https://www.youtube.com/watch?v=v45F0YesdZM"target="_blank"><img src="images/kissme.jpg"><p>Kiss Me</p></a>  
+        </div>
+    </div>
+
+   
+   
+
+
+
+<div class="container">
+    <!--
+    <div class="banner">
+        <img src="images/Banner2.png">
+    </div>
+    --->
+        <video id="mediaPlayer" src="#" width="800px" height="500px" controls onended="playArray()">
+        Your browser does not support the video tag.
+        </video>
+        <p id="currentFile">Untitle video</p>
+        <button class="btn" onclick="randomMode()" id="btn_random"> Shuffle </button>
+        <img src="./images/noloop.png" id="img_loop" onclick="changeLoop()" class="btn">
+        <button class="btn" onclick="clearlist()">Clearlisted</button>
+        <p class="listfile">List file here:</p>
+        <div id="filepar"></div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Drag some thing here</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="dropzone2" ondragover="allowDrop(event)">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
